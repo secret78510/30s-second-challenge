@@ -1,0 +1,243 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #2894FF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.close {
+  height: 0 !important;
+  opacity: 0;
+}
+
+.btn {
+  background-color: black;
+  border: black 1px solid;
+  outline: none;
+  color: #2894FF;
+  width: 400px;
+  height: 80px;
+  font-size: 45px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transform: 0.4s all;
+          transform: 0.4s all;
+}
+
+.btn:hover {
+  color: #000;
+  position: relative;
+  top: 6px;
+  background-color: white;
+  border: white 1px solid;
+}
+
+.startPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.startPage h1 {
+  font-size: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  text-shadow: 5px 0 2px #000;
+}
+
+.startPage span {
+  font-size: 85px;
+  padding-top: 20px;
+  color: #000;
+  text-shadow: none;
+}
+
+.playingPage {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.playingPage .playingTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  font-size: 60px;
+}
+
+.playingPage .score {
+  text-align: center;
+}
+
+.playingPage .score P {
+  font-size: 60px;
+  position: relative;
+}
+
+.playingPage .score P::after, .playingPage .score P::before {
+  content: '';
+  height: 4px;
+  width: 60px;
+  display: block;
+  background-color: white;
+  position: absolute;
+}
+
+.playingPage .score P::after {
+  left: 0;
+  top: 50%;
+}
+
+.playingPage .score P::before {
+  right: 0;
+  top: 50%;
+}
+
+.playingPage .time {
+  margin: auto 0;
+  font-size: 80px;
+}
+
+.playingPage .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.playingPage .calculation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.playingPage .calculation .num {
+  font-size: 60px;
+}
+
+.playingPage .calculation .operator, .playingPage .calculation .count {
+  color: #FFFCEC;
+}
+
+.playingPage .answer {
+  padding-right: 10px;
+}
+
+.playingPage .answer input {
+  width: 200px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.playingPage .answer p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 1px;
+}
+
+.againPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.againPage h3 {
+  font-size: 80px;
+}
+
+.againPage h4 {
+  font-size: 80px;
+  position: relative;
+}
+
+.againPage h4::after, .againPage h4::before {
+  content: '';
+  height: 4px;
+  width: 60px;
+  display: block;
+  background-color: white;
+  position: absolute;
+}
+
+.againPage h4::after {
+  right: 130%;
+  top: 50%;
+}
+
+.againPage h4::before {
+  left: 130%;
+  top: 50%;
+}
+/*# sourceMappingURL=all.css.map */

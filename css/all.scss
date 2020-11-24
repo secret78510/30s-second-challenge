@@ -1,0 +1,174 @@
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+$themeColor: #2894FF;
+$operator: #FFFCEC;
+body{
+  background-color: $themeColor;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+.close{
+  height: 0 !important;
+  opacity: 0;
+}
+.btn{
+    background-color: black;
+    border: black 1px solid;
+    outline: none;
+    color: $themeColor;
+    width: 400px;
+    height: 80px;
+    font-size: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transform: 0.4s all;
+    &:hover{
+      color: #000;
+      position: relative;
+      top: 6px;
+      background-color: white;
+      border: white 1px solid;
+    }
+}
+
+.startPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  transition: all 0.5s; 
+  h1{
+    font-size:200px;
+    display: flex;
+    color: white;
+    text-shadow: 5px 0 2px #000;
+  }
+  span{
+    font-size: 85px;
+    padding-top: 20px;
+    color: #000;
+    text-shadow: none;
+  }
+}
+.playingPage{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: all 0.5s; 
+  .playingTitle{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 60px;
+  }
+  .score {
+    text-align: center;
+    P{
+      font-size: 60px;
+      position: relative;
+      &::after,&::before{
+        content: '';
+        height: 4px;
+        width:60px;
+        display: block;
+        background-color: white;
+        position: absolute;
+      }
+      &::after{
+        left: 0;
+        top: 50%;
+      }
+      &::before{
+        right: 0;
+        top: 50%;
+      }
+    }
+    
+  }
+  .time{
+    margin: auto 0;
+    font-size: 80px;
+  }
+  .question{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .calculation{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+    .num{
+      font-size: 60px;
+    }
+    .operator,.count{
+      color: 		$operator;
+    }
+  }
+  .answer{
+    padding-right:10px;
+    input{
+      width: 200px;
+      font-size: 60px;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 20px;
+      padding-top: 1px;
+    }
+  }
+}
+.againPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s; 
+  h3{
+    font-size: 80px;
+  }
+  h4{
+    font-size: 80px;
+    position: relative;
+    &::after,&::before{
+      content: '';
+      height: 4px;
+      width:60px;
+      display: block;
+      background-color: white;
+      position: absolute;
+    }
+    &::after{
+      right: 130%;
+      top: 50%;
+    }
+    &::before{
+      left: 130%;
+      top: 50%;
+    }
+  }
+}
